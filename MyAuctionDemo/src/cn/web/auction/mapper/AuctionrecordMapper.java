@@ -5,7 +5,7 @@ import cn.web.auction.pojo.AuctionrecordExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
-public interface AuctionrecordMapper {
+public interface AuctionRecordMapper {
     int countByExample(AuctionrecordExample example);
 
     int deleteByExample(AuctionrecordExample example);

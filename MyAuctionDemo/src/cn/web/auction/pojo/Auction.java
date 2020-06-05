@@ -2,13 +2,14 @@ package cn.web.auction.pojo;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 public class Auction {
     private Integer auctionid;
 
     private String auctionname;
 
-    private BigDecimal auctionstartprice;
+    private Double auctionstartprice;
 
     private BigDecimal auctionupset;
 
@@ -21,6 +22,10 @@ public class Auction {
     private String auctionpictype;
 
     private String auctiondesc;
+    
+    private List<Auctionrecord> recordList;
+    
+    
 
     public Integer getAuctionid() {
         return auctionid;
@@ -38,11 +43,11 @@ public class Auction {
         this.auctionname = auctionname == null ? null : auctionname.trim();
     }
 
-    public BigDecimal getAuctionstartprice() {
+    public Double getAuctionstartprice() {
         return auctionstartprice;
     }
 
-    public void setAuctionstartprice(BigDecimal auctionstartprice) {
+    public void setAuctionstartprice(Double auctionstartprice) {
         this.auctionstartprice = auctionstartprice;
     }
 
@@ -93,4 +98,12 @@ public class Auction {
     public void setAuctiondesc(String auctiondesc) {
         this.auctiondesc = auctiondesc == null ? null : auctiondesc.trim();
     }
+
+	public List<Auctionrecord> getRecordList() {
+		return recordList;
+	}
+
+	public void setRecordList(List<Auctionrecord> recordList) {
+		this.recordList = recordList;
+	}
 }

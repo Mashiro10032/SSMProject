@@ -1,6 +1,6 @@
 package cn.web.auction.pojo;
 
-import java.math.BigDecimal;
+
 import java.util.Date;
 
 public class Auctionrecord {
@@ -12,7 +12,9 @@ public class Auctionrecord {
 
     private Date auctiontime;
 
-    private BigDecimal auctionprice;
+    private Double auctionprice;
+    
+    private User user;
 
     public Integer getId() {
         return id;
@@ -46,11 +48,19 @@ public class Auctionrecord {
         this.auctiontime = auctiontime;
     }
 
-    public BigDecimal getAuctionprice() {
+    public Double getAuctionprice() {
         return auctionprice;
     }
 
-    public void setAuctionprice(BigDecimal auctionprice) {
+    public void setAuctionprice(Double auctionprice) {
         this.auctionprice = auctionprice;
     }
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
 }

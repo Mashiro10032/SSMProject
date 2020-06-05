@@ -15,5 +15,5 @@
             http://www.springframework.org/schema/util/spring-util-3.2.xsd">
 
 	<!-- 扫描service包，托管 业务类-->
-	<context:component-scan base-package="cn.web.auction.serviceImpl"/>
+	<context:component-scan base-package="cn.web.auction.service.impl"/>
 </beans>

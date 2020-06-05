@@ -3,14 +3,14 @@ package cn.web.auction.pojo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserExample {
+public class userExample {
     protected String orderByClause;
 
     protected boolean distinct;
 
     protected List<Criteria> oredCriteria;
 
-    public UserExample() {
+    public userExample() {
         oredCriteria = new ArrayList<Criteria>();
     }
 

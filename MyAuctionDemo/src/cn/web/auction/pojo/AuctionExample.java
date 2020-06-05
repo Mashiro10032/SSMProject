@@ -246,32 +246,32 @@ public class AuctionExample {
             return (Criteria) this;
         }
 
-        public Criteria andAuctionstartpriceEqualTo(BigDecimal value) {
+        public Criteria andAuctionstartpriceEqualTo(Double value) {
             addCriterion("auctionStartPrice =", value, "auctionstartprice");
             return (Criteria) this;
         }
 
-        public Criteria andAuctionstartpriceNotEqualTo(BigDecimal value) {
+        public Criteria andAuctionstartpriceNotEqualTo(Double value) {
             addCriterion("auctionStartPrice <>", value, "auctionstartprice");
             return (Criteria) this;
         }
 
-        public Criteria andAuctionstartpriceGreaterThan(BigDecimal value) {
+        public Criteria andAuctionstartpriceGreaterThan(Double value) {
             addCriterion("auctionStartPrice >", value, "auctionstartprice");
             return (Criteria) this;
         }
 
-        public Criteria andAuctionstartpriceGreaterThanOrEqualTo(BigDecimal value) {
+        public Criteria andAuctionstartpriceGreaterThanOrEqualTo(Double value) {
             addCriterion("auctionStartPrice >=", value, "auctionstartprice");
             return (Criteria) this;
         }
 
-        public Criteria andAuctionstartpriceLessThan(BigDecimal value) {
+        public Criteria andAuctionstartpriceLessThan(Double value) {
             addCriterion("auctionStartPrice <", value, "auctionstartprice");
             return (Criteria) this;
         }
 
-        public Criteria andAuctionstartpriceLessThanOrEqualTo(BigDecimal value) {
+        public Criteria andAuctionstartpriceLessThanOrEqualTo(Double value) {
             addCriterion("auctionStartPrice <=", value, "auctionstartprice");
             return (Criteria) this;
         }

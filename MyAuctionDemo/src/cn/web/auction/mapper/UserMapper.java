@@ -1,14 +1,14 @@
 package cn.web.auction.mapper;
 
 import cn.web.auction.pojo.User;
-import cn.web.auction.pojo.UserExample;
+import cn.web.auction.pojo.userExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface UserMapper {
-    int countByExample(UserExample example);
+    int countByExample(userExample example);
 
-    int deleteByExample(UserExample example);
+    int deleteByExample(userExample example);
 
     int deleteByPrimaryKey(Integer userid);
 
@@ -16,13 +16,13 @@ public interface UserMapper {
 
     int insertSelective(User record);
 
-    List<User> selectByExample(UserExample example);
+    List<User> selectByExample(userExample example);
 
     User selectByPrimaryKey(Integer userid);
 
-    int updateByExampleSelective(@Param("record") User record, @Param("example") UserExample example);
+    int updateByExampleSelective(@Param("record") User record, @Param("example") userExample example);
 
-    int updateByExample(@Param("record") User record, @Param("example") UserExample example);
+    int updateByExample(@Param("record") User record, @Param("example") userExample example);
 
     int updateByPrimaryKeySelective(User record);
 
